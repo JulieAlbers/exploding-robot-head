@@ -37,10 +37,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   top: 5rem;
-}
-
-.robot-brain:hover {
-  top: 3rem;
+  transition: .25s;
 }
 
 .robot-head-right,
@@ -53,20 +50,26 @@ body {
 .robot-head-left {
   left: 50%;
   transform: translateX(-7.75rem);
+  transition: .25s;
 }
 
-.robot-body:hover,
-.robot-head-left:hover {
-  transform: translateX(-9.75rem);
-}
-
-.robot-body:hover,
 .robot-head-right {
   right: 50%;
   transform: translateX(7.75rem);
+  transition: .25s;
 }
 
-.robot-body:hover,
-.robot-head-right:hover {
+.robot:hover .robot-brain {
+  top: 3rem;
+  transition: .25s;
+}
+
+.robot:hover .robot-head-left {
+  transform: translateX(-9.75rem);
+  transition: .25s;
+}
+
+.robot:hover .robot-head-right {
   transform: translateX(9.75rem);
+  transition: .25s;
 }
